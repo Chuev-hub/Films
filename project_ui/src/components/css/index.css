@@ -1,0 +1,214 @@
+@keyframes text {
+    0%{
+        color: rgba(84, 85, 175, 0) ;
+        text-shadow: 5px 2px rgba(0, 0, 0, 0);
+        pointer-events: none;
+    }
+    40%{
+        color: rgba(84, 85, 175, 0.192) ;
+    }
+   99%{
+    pointer-events: none;
+   }
+    100%{
+        color: rgb(255, 255, 255) ;
+        text-shadow: 5px 2px rgba(0, 0, 0, 0.479);
+    }
+}
+@keyframes textgreen {
+    0%{
+        color: #18c46000 ;
+        text-shadow: 5px 2px rgba(0, 0, 0, 0);
+        pointer-events: none;
+        display: none;
+    }
+    99%{
+        pointer-events: none;
+       }
+    100%{
+        color: #18c46000 ;
+        text-shadow: 5px 2px rgba(0, 0, 0, 0);
+        display: none;
+    }
+}
+body {
+   
+    background-color: rgb(0, 0, 0);
+    background: url(bg.jpg) ;
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+   }
+   
+.m{
+  animation:text 4s 1;
+  color:white;
+  font-size:12vw;
+  margin-left:50px ;
+  margin-top:50px;
+  text-shadow: 5px 2px rgba(0,00,0,0.5);
+  width: 14vw;
+}
+.m:hover {
+     color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px white;
+    text-shadow: 5px 2px rgba(0,00,0,0);
+    
+}
+.butn:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+.userb{
+    background-image: url(user.svg);
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-right: 20px;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(126, 239, 104, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+  outline: 0 none;
+}
+.animsearch{
+    color: white ;
+    box-shadow:none;
+    border: none;
+    background-color: rgba(255, 250, 240, 0);
+    margin-left: 15px;
+}
+.animsearch:hover{
+  text-shadow: 2px 1px rgba(126, 239, 104, 0.6);
+
+}
+.dm{
+    margin-top:  40px !important;;
+    margin-right:-50px!important;
+    margin-left: 0px!important;
+}
+@media (max-width: 991px) {
+     .userb{
+    margin-top: 10px;
+}
+.infodiv {
+   display: none;
+}
+  
+.dm{
+ 
+    margin-top:40px!important;
+    margin-right:-180px!important;
+    margin-left: 00px!important;
+}
+}
+#box {
+   
+    animation:pulse 0.5s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from { box-shadow:0px 0px 10px 3px #00cc33; }
+    to { box-shadow:0px 0px 20px 5px #00cc33; }
+  }
+.infodiv {
+    position: absolute;
+    bottom: -420px;
+    width: 20%;
+    height: 450px;
+    background: #0d143f;
+    transition: bottom .2s linear;
+    border-color: rgba(126, 239, 104, 0.8);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.075) inset, 0 0 18px rgba(126, 239, 104, 0.6);
+    border-radius: 25px  ; 
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 1; /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgba(0, 0, 0, 0.664); /* Черный с непрозрачностью */
+    
+  }
+  
+  /* Модальное содержание/коробка */
+ 
+  
+  /* Кнопка закрытия */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .infodiv:hover {
+    bottom: 0px;
+  }
+  @keyframes lg {
+    0%{
+       
+       color: rgba(0, 0, 0, 0);
+    
+    }
+    
+    50%{
+        
+        color:   rgba(96, 199, 76, 0.644);
+    }
+    100%{
+       
+        color:  rgba(0, 0, 0, 0);
+    
+    }
+}
+.txtlight
+{
+    font-weight: bold;
+    animation:lg 2s ;
+    animation-iteration-count: infinite 
+}
+
+.error {
+    color: red;
+    background-color: rgba(0, 0, 0, 0.479);    
+    border-radius: 20px;
+    display: none;
+    height: min-content;
+}
+.modal-conten {
+    background-color: #826bbe;
+    margin: 30% auto; 
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+   
+  }
