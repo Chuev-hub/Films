@@ -1,9 +1,9 @@
-# Films project
-## Description
+# Films project 🎬
+## Description ✏️
 This is a service for creating selections of movies, viewing their information, and searching for them. 
 
 There is registration, and login to a personal account. There is also an administrator account that has access to do Create-Read-Update-Delete operations with the movies.
-## Stack 
+## Stack 📋
 - ASP.NET Core MVC
 - REST Api
 - JWT
@@ -13,7 +13,7 @@ There is registration, and login to a personal account. There is also an adminis
 - React
 - Bootstrap 
 
-## Stack description
+## Stack description 💻
 Project has two parts - back-end on ASP.NET Core MVC and front-end on ReactJs library.
 The first one has a 3tier architecture:
 
