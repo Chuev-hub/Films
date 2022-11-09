@@ -3,6 +3,11 @@
 This is a service for creating selections of movies, viewing their information, and searching for them. 
 
 There is registration, and login to a personal account. There is also an administrator account that has access to do Create-Read-Update-Delete operations with the movies.
+
+# My Gif
+<img src="https://github.com/Chuev-hub/Films/blob/master/work.gif" width="384" height="216"/>
+
+
 ## Stack 📋
 - ASP.NET Core MVC
 - REST Api
